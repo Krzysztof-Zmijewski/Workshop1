@@ -1,5 +1,9 @@
 package TaskMenager;
 
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
 import java.util.Scanner;
 
 public class  Menager {
@@ -24,5 +28,20 @@ public class  Menager {
             }
         }
 
+    }
+    public static String[][] loadTasks (String filename) {
+        Path path = Paths.get(filename);
+        if (!Files.exists(path)) {
+            System.out.println("File does not exist");
+            System.exit(0);
+        }
+        String[][] tab = null;
+        try {
+            List<String> strings = Files.readAllLines(path);
+            tab = new String[strings.size()][strings.get(0).split(",").length];
+            //for (int i = 0; i < ; i++) {
+                
+            }
+        }
     }
 }
