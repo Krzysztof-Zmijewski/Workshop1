@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08521aa6-09aa-4c29-a0f7-544c372f580b" name="Changes" comment="Dalej próbuję">
-      <change afterPath="$PROJECT_DIR$/src/main/java/TaskMenager/ConsoleColors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TaskMenager/Menager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks.csv" afterDir="false" />
+    <list default="true" id="08521aa6-09aa-4c29-a0f7-544c372f580b" name="Changes" comment="Wyświetlenie opcji na konsoli">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TaskMenager/Menager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskMenager/Menager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +48,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/krzysztof/Pulpit/Kurs/Online/day1/ONL_JEE_W_22_Podstawy_Java",
+    "last_opened_file_path": "/home/krzysztof/Pulpit/Kurs/java git/Workshop1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -98,7 +94,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681996611082</updated>
-      <workItem from="1681996612136" duration="2929000" />
+      <workItem from="1681996612136" duration="3419000" />
+      <workItem from="1682084031404" duration="1652000" />
     </task>
     <task id="LOCAL-00001" summary="Dalej próbuję">
       <created>1681996647766</created>
@@ -107,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681996647766</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Wyświetlenie opcji na konsoli">
+      <created>1681999839998</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681999839998</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +120,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Dalej próbuję" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dalej próbuję" />
+    <MESSAGE value="Wyświetlenie opcji na konsoli" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wyświetlenie opcji na konsoli" />
   </component>
 </project>
