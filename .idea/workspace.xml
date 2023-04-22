@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08521aa6-09aa-4c29-a0f7-544c372f580b" name="Changes" comment="Poprawiona komanda list">
+    <list default="true" id="08521aa6-09aa-4c29-a0f7-544c372f580b" name="Changes" comment="Komanda add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TaskMenager/Menager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskMenager/Menager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TaskMenager/tasks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskMenager/tasks.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +97,7 @@
       <updated>1681996611082</updated>
       <workItem from="1681996612136" duration="3419000" />
       <workItem from="1682084031404" duration="4027000" />
-      <workItem from="1682166006135" duration="5237000" />
+      <workItem from="1682166006135" duration="8927000" />
     </task>
     <task id="LOCAL-00001" summary="Dalej próbuję">
       <created>1681996647766</created>
@@ -140,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682170248009</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Komanda add">
+      <created>1682171462595</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682171462595</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +162,7 @@
     <MESSAGE value="Niedokończone pobieranie tablicy z pliku" />
     <MESSAGE value="Skończona komanda list" />
     <MESSAGE value="Poprawiona komanda list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Poprawiona komanda list" />
+    <MESSAGE value="Komanda add" />
+    <option name="LAST_COMMIT_MESSAGE" value="Komanda add" />
   </component>
 </project>

@@ -1,5 +1,8 @@
 package TaskMenager;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.math.NumberUtils;
+
 import javax.imageio.IIOException;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -8,6 +11,7 @@ import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+
 
 public class  Menager {
     public static void main(String[] args) {
@@ -34,12 +38,30 @@ public class  Menager {
                 tasks[tasks.length - 1][2] = isImportant;
                 sentence = scanner.nextLine();
             } else if (sentence.equals("remove")) {
-                //tutaj usuwanie
+                try {
+                    int index = getNumber();
+                    if (index < tasks.length) {
+                        tasks = ArrayUtils.remove(tasks,index);
+                    }
+                } catch (ArrayIndexOutOfBoundsException ex) {
+                    System.out.println("Element not exist in tasks");
+                }
+                sentence = scanner.nextLine();
             } else if (sentence.equals("list")) {
                 showList(tasks);
                 sentence = scanner.nextLine();
             } else if (sentence.equals("exit")) {
-                System.out.println("Bye Bye");
+                System.out.println(ConsoleColors.RED + "Bye Bye");
+                Path path = Paths.get("src/main/java/TaskMenager/tasks.csv");
+                String[] lines = new String[tasks.length];
+                for (int i = 0; i < tasks.length; i++) {
+                    lines[i] = String.join(",", tasks[i]);
+                }
+                try {
+                    Files.write(path, Arrays.asList(lines));
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
                 IsLoopWorking = false;
             } else {
                 System.out.println(ConsoleColors.RED + "Please select a correct option" + ConsoleColors.RESET);
@@ -79,5 +101,21 @@ public class  Menager {
             System.out.println();
         }
 
+    }
+    public static boolean isNumberGreaterOrEqualZero(String input) {
+        if (NumberUtils.isParsable(input)) {
+            return Integer.parseInt(input) >= 0;
+        }
+        return false;
+    }
+    public static int getNumber() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please select number to remove.");
+        String n = scanner.nextLine();
+        while (!isNumberGreaterOrEqualZero(n)) {
+            System.out.println("Incorrect argument passed. Please give number greater or equal 0");
+            scanner.nextLine();
+        }
+        return Integer.parseInt(n);
     }
 }
