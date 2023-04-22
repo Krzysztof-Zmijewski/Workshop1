@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -20,7 +21,18 @@ public class  Menager {
         boolean IsLoopWorking = true;
         while (IsLoopWorking) {
             if (sentence.equals("add")) {
-                //dodawanie tasków
+                tasks = Arrays.copyOf(tasks, tasks.length + 1);
+                System.out.println("Please add task description");
+                String description = scanner.nextLine();
+                System.out.println("Please add task due date");
+                String dueDate = scanner.nextLine();
+                System.out.println("Is your task important: true/false");
+                String isImportant = scanner.nextLine();
+                tasks[tasks.length - 1] = new String[3];
+                tasks[tasks.length - 1][0] = description;
+                tasks[tasks.length - 1][1] = dueDate;
+                tasks[tasks.length - 1][2] = isImportant;
+                sentence = scanner.nextLine();
             } else if (sentence.equals("remove")) {
                 //tutaj usuwanie
             } else if (sentence.equals("list")) {

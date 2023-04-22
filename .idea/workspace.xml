@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08521aa6-09aa-4c29-a0f7-544c372f580b" name="Changes" comment="Skończona komanda list">
+    <list default="true" id="08521aa6-09aa-4c29-a0f7-544c372f580b" name="Changes" comment="Poprawiona komanda list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TaskMenager/Menager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskMenager/Menager.java" afterDir="false" />
     </list>
@@ -96,7 +96,7 @@
       <updated>1681996611082</updated>
       <workItem from="1681996612136" duration="3419000" />
       <workItem from="1682084031404" duration="4027000" />
-      <workItem from="1682166006135" duration="3972000" />
+      <workItem from="1682166006135" duration="5237000" />
     </task>
     <task id="LOCAL-00001" summary="Dalej próbuję">
       <created>1681996647766</created>
@@ -133,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682169356323</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Poprawiona komanda list">
+      <created>1682170248009</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682170248009</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +153,7 @@
     <MESSAGE value="Szkielet programu" />
     <MESSAGE value="Niedokończone pobieranie tablicy z pliku" />
     <MESSAGE value="Skończona komanda list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Skończona komanda list" />
+    <MESSAGE value="Poprawiona komanda list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Poprawiona komanda list" />
   </component>
 </project>
