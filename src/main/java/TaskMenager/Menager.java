@@ -25,13 +25,13 @@ public class  Menager {
                 //tutaj usuwanie
             } else if (sentence.equals("list")) {
                 showList(tasks);
-                for (String option : options) {
-                    System.out.println(option);
-                }
                 sentence = scanner.nextLine();
             } else if (sentence.equals("exit")) {
                 System.out.println("Bye Bye");
                 IsLoopWorking = false;
+            } else {
+                System.out.println(ConsoleColors.RED + "Please select a correct option" + ConsoleColors.RESET);
+                sentence = scanner.nextLine();
             }
         }
 
@@ -60,9 +60,11 @@ public class  Menager {
     }
     public static void showList (String[][] listName){
         for (int i = 0; i < listName.length ; i++) {
+            System.out.print(i + ": ");
             for (int j = 0; j <listName[i].length ; j++) {
-                System.out.println(listName[i][j] + ",");
+                System.out.print(listName[i][j] + " ");
             }
+            System.out.println();
         }
 
     }
