@@ -1,5 +1,7 @@
 package TaskMenager;
 
+import javax.imageio.IIOException;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -8,6 +10,7 @@ import java.util.Scanner;
 
 public class  Menager {
     public static void main(String[] args) {
+        String[][] tasks = loadTasks("src/main/java/TaskMenager/tasks.csv");
         Scanner scanner = new Scanner(System.in);
         String[] options = {ConsoleColors.BLUE + "Please select an option:", ConsoleColors.RESET + "add", "remove", "list", "exit"};
         for (String option : options) {
@@ -21,7 +24,11 @@ public class  Menager {
             } else if (sentence.equals("remove")) {
                 //tutaj usuwanie
             } else if (sentence.equals("list")) {
-                //tutaj lista wszystkich tasków
+                showList(tasks);
+                for (String option : options) {
+                    System.out.println(option);
+                }
+                sentence = scanner.nextLine();
             } else if (sentence.equals("exit")) {
                 System.out.println("Bye Bye");
                 IsLoopWorking = false;
@@ -39,9 +46,24 @@ public class  Menager {
         try {
             List<String> strings = Files.readAllLines(path);
             tab = new String[strings.size()][strings.get(0).split(",").length];
-            //for (int i = 0; i < ; i++) {
-                
+            for (int i = 0; i <strings.size() ; i++) {
+                String[] split = strings.get(i).split(",");
+                for (int j = 0; j < split.length; j++) {
+                    tab[i][j] = split[j];
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("file does not exists");
+        }
+        return tab;
+    }
+    public static void showList (String[][] listName){
+        for (int i = 0; i < listName.length ; i++) {
+            for (int j = 0; j <listName[i].length ; j++) {
+                System.out.println(listName[i][j] + ",");
             }
         }
+
     }
 }

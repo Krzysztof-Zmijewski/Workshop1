@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08521aa6-09aa-4c29-a0f7-544c372f580b" name="Changes" comment="Szkielet programu">
+    <list default="true" id="08521aa6-09aa-4c29-a0f7-544c372f580b" name="Changes" comment="Niedokończone pobieranie tablicy z pliku">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TaskMenager/Menager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskMenager/Menager.java" afterDir="false" />
     </list>
@@ -57,7 +57,7 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -95,7 +95,8 @@
       <option name="presentableId" value="Default" />
       <updated>1681996611082</updated>
       <workItem from="1681996612136" duration="3419000" />
-      <workItem from="1682084031404" duration="3988000" />
+      <workItem from="1682084031404" duration="4027000" />
+      <workItem from="1682166006135" duration="3140000" />
     </task>
     <task id="LOCAL-00001" summary="Dalej próbuję">
       <created>1681996647766</created>
@@ -118,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682086750792</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Niedokończone pobieranie tablicy z pliku">
+      <created>1682110507312</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682110507312</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +137,7 @@
     <MESSAGE value="Dalej próbuję" />
     <MESSAGE value="Wyświetlenie opcji na konsoli" />
     <MESSAGE value="Szkielet programu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Szkielet programu" />
+    <MESSAGE value="Niedokończone pobieranie tablicy z pliku" />
+    <option name="LAST_COMMIT_MESSAGE" value="Niedokończone pobieranie tablicy z pliku" />
   </component>
 </project>
